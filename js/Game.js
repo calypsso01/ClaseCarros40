@@ -31,6 +31,9 @@ class Game {
     car2.scale = 0.07;
 
     cars = [car1, car2];
+
+    fuels = new Group();
+    powerCoins = new Group();
   }
 
   //BP
@@ -62,6 +65,7 @@ class Game {
         // Agrega 1 al índice en cada ciclo
         index = index + 1;
 
+        //marcando al jugador
         if (index === player.index) {
           stroke(10);
           fill("red");
